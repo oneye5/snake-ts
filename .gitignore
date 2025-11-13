@@ -137,3 +137,15 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+*.esproj
+Snake/package-lock.json
+Snake/obj/Debug/Snake.esproj.FileListAbsolute.txt
+/Snake/obj
+Snake/eslint.config.js
+Snake/app.js.map
+Snake/app.js
+Snake/app.d.ts.map
+Snake/app.d.ts
+/Snake/.vscode
+Snake.sln
+/.vs
