@@ -12,7 +12,20 @@ class Point {
     y: number = height/2;
 }
 class Snake {
-    
+    head: Point = new Point();
+    segments: Point[] = [];
+    segmentCount: number = 3;
+    dir: Point;
+
+    public constructor() {
+        this.dir = new Point();
+        this.dir.x = 1;
+        this.dir.y = 0;
+    }
+
+    public tickSnake() {
+
+    }
 }
 
 const fillScreen = () => {
