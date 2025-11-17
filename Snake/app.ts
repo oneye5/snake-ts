@@ -8,22 +8,39 @@ let height: number = 16;
 let emptyChar: string = '-';
 
 class Point {
-    x: number = width/2;
-    y: number = height/2;
+    x: number;
+    y: number;
+    public constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
 }
 class Snake {
-    head: Point = new Point();
+    head: Point = new Point(width/2, height/2);
     segments: Point[] = [];
     segmentCount: number = 3;
     dir: Point;
 
     public constructor() {
-        this.dir = new Point();
-        this.dir.x = 1;
-        this.dir.y = 0;
+        this.dir = new Point(1, 0);
     }
 
     public tickSnake() {
+        this.head.x += this.dir.x;
+        this.head.y += this.dir.y; 
+
+        // put new head segment
+        this.segments.push()
+
+        // pop excess segments
+        while (this.segments.length > this.segmentCount) {
+            this.segments.pop();
+        }
+
+        this.drawSnake();
+    }
+
+    private drawSnake() {
 
     }
 }
